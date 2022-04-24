@@ -1,1 +1,13 @@
 /* styles go here */
+.forn-field {
+  display: block;
+}
+
+fieldset {
+  margin-bottom: 20px;
+  width: 700px;
+}
+
+label {
+  margin: 10px 0px;
+}
