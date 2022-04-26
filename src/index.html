@@ -14,7 +14,7 @@
     <script type="text/javascript" src="./main.js"></script>
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" 
     method="post" autocomplete="off">
-      <fieldset>
+      <fieldset class="inputs-block">
         <legend>Personal information</legend>
         <label class="forn-field">Surname:
           <input type="text" name="Surname">
@@ -41,7 +41,7 @@
         </label>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="inputs-block">
         <legend>Registration</legend>
         <label class="forn-field">E-mail:
           <input placeholder="email@example.com" 
@@ -55,36 +55,36 @@
         </label>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="inputs-block">
         <legend>An interesting fact about you!</legend>
-        Do you like cats?
-        <input type="radio" 
-        id="yes" 
-        name="yes" 
-        value="Yes">
-        <label for="yes">Yes</label>
+        <div class="forn-field">
+          Do you love cats?
+          <label>
+            <input type="radio" name="cats" 
+            value="yes">
+            Yes
+          </label>
 
-        <input type="radio" 
-        id="no" 
-        name="no" 
-        value="No">
-        <label for="no">No</label>
+          <label>
+            <input type="radio" name="cats" 
+            value="no">
+            No
+          </label>
+        </div>
 
         <label class="forn-field">What is your favorite color?
           <input type="color" name="color">
         </label>
 
         <label class="forn-field">What time do you go to bed?
-          <input type="time" name="time">
+          <input type="time" name="time" 
+          step="1">
         </label>
 
         <label class="forn-field">
           What are your favorite brand of cars?
-          <select name="car" required>
-            <option value=" " 
-            disabled 
-            selected
-            ></option>
+          <select name="car" multiple
+          required>
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
             <option value="Lada">Lada</option>
@@ -92,18 +92,18 @@
         </label>
 
         <label class="forn-field">How do you rate our work?
-          <input type="range" name="rate">
+          <input type="range" name="rate"
+          min="1" max="5"
+          value="0">
         </label>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="inputs-block">
         <legend>Additional info:</legend>
-        Comments:
-        <label for="feedback">
-          <textarea name="feedback" 
-          id="feedback" 
-          cols="30" 
-          rows="5"></textarea>
+        <label class="forn-field">
+          Comments:
+          <textarea name="feedback">
+          </textarea>
         </label>
 
         <label class="forn-field">

@@ -1,12 +1,17 @@
 /* styles go here */
 .forn-field {
+  margin-bottom: 10px;
   display: block;
 }
 
-fieldset {
-  margin-bottom: 10px;
+.forn-field:last-child {
+  margin-bottom: 0;
 }
 
 label {
   margin-bottom: 10px;
+}
+
+.inputs-block {
+  margin-bottom: 20px;
 }
